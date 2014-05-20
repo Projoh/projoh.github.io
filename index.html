@@ -1,5 +1,6 @@
 <html>
 <head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="jBeep.min.js" type="text/javascript"></script>
 <style type="text/css">
 body {
@@ -8,7 +9,7 @@ background-color:white;
 
 input {
 padding: 10px;
-background-color: blue;
+background-color: darkred;
 border: .2px solid black;
 text-decoration:bold;
 font-size:80px;
@@ -16,17 +17,142 @@ width:500px;
 }
 input:hover
 {
-background-color: darkblue;
+background-color: green;
 }
 </style>
 <body> <br><br>
 <CENTER>
-<p id="jamal"></p>
-<input type=button id="faggotHEELLLOO" onClick="javascript:jBeep('hello2.mp3');" value="HELLO"><br>
-<input type=button id="faggotHEELLLOO" onClick="javascript:jBeep('two.mp3');" value="2/2"><br>
-<input type=button id="faggotHEELLLOO" onClick="javascript:jBeep('however.mp3');" value="HOWEVER"><br>
-<input type=button id="faggotHEELLLOO" onClick="javascript:jBeep('anada.mp3');" value="ANADA 1"><br>
-<input type=button id="faggotHEELLLOO" onClick="javascript:jBeep('unbound.mp3');" value="UNBOUNDD">
+<script type="text/javascript">
+i = 1;
+
+function hello() {
+	if (i < 15) {
+	jBeep('hello.mp3');
+	i ++;
+	} 
+	if(i > 14 && i < 150) {
+	test();
+	}
+	if(i > 149) {
+	jBeep('hello2.mp3');
+	i++;
+	}
+}
+function however() {
+	if (i < 15) {
+	jBeep('however.mp3');
+	i ++;
+	} 
+	if(i > 14 && i < 150) {
+	test();
+	}
+	if(i > 149) {
+	jBeep('however2.mp3');
+	i++;
+	}
+}
+function two() {
+	if (i < 15) {
+	jBeep('two.mp3');
+	i ++;
+	} 
+	if(i > 14 && i < 150) {
+	test();
+	}
+	if(i > 149) {
+	jBeep('two2.mp3');
+	i++;
+	}
+}
+function anada() {
+	if (i < 15) {
+	jBeep('anada.mp3');
+	i ++;
+	}
+	if(i > 14 && i < 150) {
+	test();
+	}
+	if(i > 149) {
+	jBeep('anada2.mp3');
+	i++;
+	}
+}
+function unbound() {
+	if (i < 15) {
+	jBeep('unbound.mp3');
+	i ++;
+	} 
+	if(i > 14 && i < 150) {
+	test();
+	}
+	if(i > 149) {
+	jBeep('unbound2.mp3');
+	i++;
+	}
+}
+function test() {
+	if (i < 15){
+	jBeep('hello2.mp3');
+	i ++;
+	}
+	if(i > 14 && i < 35) {
+	jBeep('however.mp3');
+	i ++;
+	document.getElementById("jamal").innerHTML="However, Dont slow down!" + " " + i;
+	document.getElementById("faggot1").value="HOWEVER";
+	document.getElementById("faggot2").value="HOWEVER";
+	document.getElementById("faggot3").value="HOWEVER";
+	document.getElementById("faggot4").value="HOWEVER";
+	document.getElementById("faggot5").value="HOWEVER";
+	}
+	if(i > 34 && i < 100) {
+	jBeep('anada.mp3');
+	i ++;
+	document.getElementById("jamal").innerHTML="SPAM AGAIN, MORE THAN ANADA ONE" + " " + i;
+	document.getElementById("faggot1").value="HERES";
+	document.getElementById("faggot2").value="A";
+	document.getElementById("faggot3").value="NAD";
+	document.getElementById("faggot4").value="AHH";
+	document.getElementById("faggot5").value="WAN";
+	}
+	if (i > 99 && i < 150) {
+	jBeep('two.mp3');
+	i ++;
+	document.getElementById("jamal").innerHTML="Two upon two more times, you are close." + " " + i;
+	document.getElementById("faggot1").value="TWO";
+	document.getElementById("faggot2").value="UP";
+	document.getElementById("faggot3").value="ON";
+	document.getElementById("faggot4").value="TOO";
+	document.getElementById("faggot5").value="OO";
+	}
+	if (i > 148) {
+	document.getElementById("jamal").innerHTML="You've done it... now patience.";
+	document.getElementById("hidden").innerHTML=i;
+	jBeep('generic.mp3');
+	document.getElementById("faggot1").value="HE--LLO!!";
+	document.getElementById("faggot2").value="TUH-TUH- UPON--";
+	document.getElementById("faggot3").value="HOWUBWUB";
+	document.getElementById("faggot4").value="ANADUBDUB";
+	document.getElementById("faggot5").value="UHH";
+	i = 200;
+	document.body.style.backgroundColor="black";
+	document.getElementById("faggot1").style.backgroundColor="blue";
+	document.getElementById("faggot2").style.backgroundColor="blue";
+	document.getElementById("faggot3").style.backgroundColor="blue";
+	document.getElementById("faggot4").style.backgroundColor="blue";
+	document.getElementById("faggot5").style.backgroundColor="blue";
+	}	
+}
+
+</script>
+<h1> VERSION 2.0! </h4>
+<p id='jamal'> ....</p>
+<input type=button id="faggot1" onClick="hello()" value="HELLO"><br>
+<input type=button id="faggot2" onClick="two()" value="2/2"><br>
+<input type=button id="faggot3" onClick="however()" value="HOWEVER"><br>
+<input type=button id="faggot4" onClick="anada()" value="ANADA 1"><br>
+<input type=button id="faggot5" onClick="unbound()" value="UNBOUNDD">
+
 </CENTER>
 </body>
 
