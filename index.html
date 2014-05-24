@@ -142,6 +142,21 @@ function test() {
 	document.getElementById("faggot5").style.backgroundColor="blue";
 	}	
 }
+function Playall()	{
+	jBeep('hello.mp3');
+		setTimeout(function() {
+			jBeep('two.mp3');
+			setTimeout(function() {
+				jBeep('however.mp3');
+				setTimeout(function() {
+					jBeep('anada.mp3');
+					setTimeout(function() {
+						jBeep('unbound.mp3');
+					},1250);
+				},1250);
+			},1250);
+		},1250);
+}
 </script>
 <h1> VERSION 2.0! </h4>
 <p id='jamal'> ....</p>
@@ -150,7 +165,7 @@ function test() {
 <input type=button id="faggot3" onClick="however()" value="HOWEVER"><br>
 <input type=button id="faggot4" onClick="anada()" value="ANADA 1"><br>
 <input type=button id="faggot5" onClick="unbound()" value="UNBOUNDD">
-
+<input type=button id="faggot5" onClick="Playall()" value="PLAY ALL">
 </CENTER>
 </body>
 
