@@ -6,13 +6,17 @@ function cock() {
 	if (i < 10) {
 	jBeep('hello.mp3');
 	i ++;
+	document.getElementById("num").innerHTML=i;
 	} 
 	if (i > 9) {
 		setTimeout(function() {
 			jBeep('hello.mp3');
+			document.getElementById("jamal").innerHTML="DELAY";
 		},350);
 	}
 }
 </script>
+<p id="num">1</p>
+<p id="jamal"> INSTANT </p>
 <input type=button id="faggot5" onClick="cock()" value="PLAY ALL">
 </html>
