@@ -3,11 +3,6 @@
 <script type="text/javascript">
 i=1;
 function cock() {
-	if (i < 9) {
-	jBeep('hello.mp3');
-	i ++;
-	document.getElementById("num").innerHTML=i;
-	} 
 	if (i = 9) {
 		i++;
 		document.getElementById("num").innerHTML=i;
@@ -18,6 +13,12 @@ function cock() {
 			document.getElementById("jamal").innerHTML="DELAY";
 		},200);
 	}
+	if (i < 9) {
+	jBeep('hello.mp3');
+	i ++;
+	document.getElementById("num").innerHTML=i;
+	} 
+	
 }
 </script>
 <p id="num">1</p>
