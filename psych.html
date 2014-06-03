@@ -3,25 +3,26 @@
 <script type="text/javascript">
 i=1;
 function cock() {
+	
+	if (i < 9) {
+	i ++;
+	document.getElementById("num").innerHTML=i;
+	setTimeout(function() {
+			jBeep('hello.mp3');
+			document.getElementById("jamal").innerHTML="INSTANT";
+		},300);
+	}
+	} 
 	if (i = 9) {
 		i++;
 		document.getElementById("num").innerHTML=i;
 	}
 	if (i > 9 ) {
-		setTimeout(function() {
-			jBeep('hello.mp3');
-			document.getElementById("jamal").innerHTML="DELAY";
-		},200);
-	}
-	if (i < 9) {
-	jBeep('hello.mp3');
-	i ++;
-	document.getElementById("num").innerHTML=i;
-	} 
-	
+		jBeep("hello.mp3");
+		i++;
 }
 </script>
 <p id="num">1</p>
-<p id="jamal"> INSTANT </p>
+<p id="jamal"> DELAY</p>
 <input type=button id="faggot5" onClick="cock()" value="PLAY ALL">
 </html>
