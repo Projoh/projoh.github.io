@@ -1,4 +1,7 @@
 var i = 1;
+var fadespd = 250;
+var fadedelay = 250
+
 $(document).ready(function() {
 	$('div#name').fadeIn(2500);
 	$('form').fadeIn(2500);
@@ -8,17 +11,17 @@ function website(){
 	if (i === 1) {
 	startup();
 	setTimeout(function() {
-	$('p#para').fadeIn(500);
-	$('img#websites').fadeIn(500);	
-	},500)
+	$('p#para').fadeIn(fadespd);
+	$('img#websites').fadeIn(250);	
+	},250)
 	} else {
-	$('p#leftalign').fadeOut(500);	
-	$('img#resume').fadeOut(500);	
+	$('p#leftalign').fadeOut(250);	
+	$('img#resume').fadeOut(250);	
 	setTimeout(function() {
 	document.getElementById("para").innerHTML="All of these pictures should be some pictures of examples of websites I made. That sentence is retarded on  purpose, fagot.<br>";
 	$('img#websites').fadeIn(1500);
 	$('p#para').fadeIn(1000);	
-	}, 500);
+	}, 250);
 		
 	}
 }
@@ -28,14 +31,14 @@ function resume1() {
 	if (i === 1) {
 	startup();
 	setTimeout(function() {
-	$('img#resume').fadeIn(500);	
+	$('img#resume').fadeIn(250);	
 	},1500)
 	} else {
-	$('p#leftalign').fadeOut(500);	
-	$('p#para').fadeOut(500);
-	$('img#websites').fadeOut(500);	
+	$('p#leftalign').fadeOut(250);	
+	$('p#para').fadeOut(250);
+	$('img#websites').fadeOut(250);	
 	setTimeout(function() {
-	$('img#resume').fadeIn(500);	
+	$('img#resume').fadeIn(250);	
 	
 	}, 800);
 	}
@@ -46,14 +49,14 @@ function contact() {
 if (i === 1) {
 	startup();
 	setTimeout(function() {
-	$('p#leftalign').fadeIn(500);
+	$('p#leftalign').fadeIn(250);
 	},1500)
 	} else {
-	$('p#para').fadeOut(500);
-	$('img#websites').fadeOut(500);	
-	$('img#resume').fadeOut(500);	
+	$('p#para').fadeOut(250);
+	$('img#websites').fadeOut(250);	
+	$('img#resume').fadeOut(250);	
 	setTimeout(function() {
-	$('p#leftalign').fadeIn(500);	
+	$('p#leftalign').fadeIn(250);	
 	}, 800);
 	}
 
@@ -63,5 +66,5 @@ function startup() {
 	i++;
 	$('div#name').animate({
 	paddingTop:'0px',
-	}, 500);
+	}, 250);
 }
