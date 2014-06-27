@@ -9,8 +9,8 @@ function website(){
 	startup();
 	setTimeout(function() {
 	$('p#para').fadeIn(500);
-	$('img#websites').fadeIn(1500);	
-	},1500)
+	$('img#websites').fadeIn(500);	
+	},500)
 	} else {
 	$('p#leftalign').fadeOut(500);	
 	$('img#resume').fadeOut(500);	
