@@ -22,7 +22,7 @@ function website(){
 	setTimeout(function() {
 	$('img#websites').fadeIn(fadedelay);
 	$('p#para').fadeIn(fadedelay);	
-	}, 100);
+	}, 250);
 	}
 }
 
@@ -40,7 +40,7 @@ function resume1() {
 	setTimeout(function() {
 	$('img#resume').fadeIn(100);	
 	
-	}, 100);
+	}, 250);
 	}
 
 }
@@ -57,7 +57,7 @@ if (i === 1) {
 	$('img#resume').fadeOut(100);	
 	setTimeout(function() {
 	$('p#leftalign').fadeIn(100);	
-	}, 100);
+	}, 250);
 	}
 
 }
