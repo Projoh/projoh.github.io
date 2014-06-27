@@ -3,8 +3,10 @@ var fadespd = 250;
 var fadedelay = 500;
 
 $(document).ready(function() {
-	$('div#name').fadeIn(2500);
-	$('form').fadeIn(2500);
+	setTimeout(function() {
+	$('div#name').fadeIn(1000);
+	$('form').fadeIn(1000);
+	}, 1000);
 });
 
 function website(){
@@ -20,7 +22,7 @@ function website(){
 	setTimeout(function() {
 	$('img#websites').fadeIn(fadedelay);
 	$('p#para').fadeIn(fadedelay);	
-	}, 10);
+	}, 100);
 	}
 }
 
@@ -38,7 +40,7 @@ function resume1() {
 	setTimeout(function() {
 	$('img#resume').fadeIn(250);	
 	
-	}, 10);
+	}, 100);
 	}
 
 }
@@ -55,7 +57,7 @@ if (i === 1) {
 	$('img#resume').fadeOut(250);	
 	setTimeout(function() {
 	$('p#leftalign').fadeIn(250);	
-	}, 10);
+	}, 100);
 	}
 
 }
