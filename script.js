@@ -14,7 +14,7 @@ function website(){
 	startup();
 	setTimeout(function() {
 	$('p#para').fadeIn(fadespd);
-	$('img#websites').fadeIn(175);	
+	$('img#websites').fadeIn(275);	
 	},175)
 	} else {
 	$('p#leftalign').fadeOut(175);	
@@ -31,7 +31,7 @@ function resume1() {
 	if (i === 1) {
 	startup();
 	setTimeout(function() {
-	$('img#resume').fadeIn(175);	
+	$('img#resume').fadeIn(275);	
 	},fadedelay)
 	} else {
 	$('p#leftalign').fadeOut(175);	
@@ -49,7 +49,7 @@ function contact() {
 if (i === 1) {
 	startup();
 	setTimeout(function() {
-	$('p#leftalign').fadeIn(175);
+	$('p#leftalign').fadeIn(275);
 	},fadedelay)
 	} else {
 	$('p#para').fadeOut(175);
