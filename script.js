@@ -59,7 +59,7 @@ if (i === 1) {
 
 }
 
-fucntion startup() {
+function startup() {
 	i++;
 	$('div#name').animate({
 	paddingTop:'0px',
