@@ -6,14 +6,11 @@ $(document).ready(function() {
 
 function website(){
 	if (i === 1) {
-		i++;
-		$('div#name').animate({
-		paddingTop:'0px',
-		}, 2500);
+		startup();
 		setTimeout(function() {
-		$('p#para').fadeIn(1500);
+		$('p#para').fadeIn(500);
 		$('img#websites').fadeIn(1500);	
-		},2500)
+		},1500)
 	} else {
 	$('p#leftalign').fadeOut(500);	
 	$('img#resume').fadeOut(500);	
@@ -29,13 +26,10 @@ function website(){
 
 function resume1() {
 	if (i === 1) {
-		i++;
-		$('div#name').animate({
-		paddingTop:'0px',
-		}, 2500);
+		startup();
 		setTimeout(function() {
-		$('img#resume').fadeIn(1500);	
-		},2500)
+		$('img#resume').fadeIn(500);	
+		},1500)
 	} else {
 	$('p#leftalign').fadeOut(500);	
 	$('p#para').fadeOut(500);
@@ -50,13 +44,10 @@ function resume1() {
 
 function contact() {
 if (i === 1) {
-		i++;
-		$('div#name').animate({
-		paddingTop:'0px',
-		}, 2500);
+		startup();
 		setTimeout(function() {
 		$('p#leftalign').fadeIn(500);
-		},2500)
+		},1500)
 	} else {
 	$('p#para').fadeOut(500);
 	$('img#websites').fadeOut(500);	
@@ -66,4 +57,13 @@ if (i === 1) {
 	}, 800);
 	}
 
+}
+
+fucntion startup() {
+	i++;
+		$('div#name').animate({
+		paddingTop:'0px',
+		}, 500);
+	
+	
 }
