@@ -4,8 +4,8 @@ var fadedelay = 500;
 
 $(document).ready(function() {
 	setTimeout(function() {
-	$('div#name').fadeIn(1000);
-	$('form').fadeIn(1000);
+	$('div#name').fadeIn(100);
+	$('form').fadeIn(100);
 	}, 1000);
 });
 
