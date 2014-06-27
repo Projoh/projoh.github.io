@@ -66,5 +66,5 @@ function startup() {
 	i++;
 	$('div#name').animate({
 	paddingTop:'0px',
-	}, 175);
+	}, 250);
 }
