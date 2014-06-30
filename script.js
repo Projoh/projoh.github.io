@@ -6,7 +6,7 @@ $(document).ready(function() {
 	setTimeout(function() {
 	$('div#name').fadeIn(175);
 	$('form').fadeIn(175);
-	}, 400);
+	}, 100);
 });
 
 function website(){
