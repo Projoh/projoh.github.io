@@ -18,7 +18,7 @@ function website(){
 	},175)
 	} else {
 	$('p#leftalign').fadeOut(175);	
-	$('img#resume').fadeOut(175);	
+	$('#resume').fadeOut(175);	
 	setTimeout(function() {
 	$('img#websites').fadeIn(fadedelay);
 	$('p#para').fadeIn(fadedelay);	
@@ -31,14 +31,14 @@ function resume1() {
 	if (i === 1) {
 	startup();
 	setTimeout(function() {
-	$('img#resume').fadeIn(275);	
+	$('#resume').fadeIn(275);	
 	},fadedelay)
 	} else {
 	$('p#leftalign').fadeOut(175);	
 	$('p#para').fadeOut(175);
 	$('img#websites').fadeOut(175);	
 	setTimeout(function() {
-	$('img#resume').fadeIn(175);	
+	$('#resume').fadeIn(175);	
 	
 	}, 250);
 	}
@@ -54,7 +54,7 @@ if (i === 1) {
 	} else {
 	$('p#para').fadeOut(175);
 	$('img#websites').fadeOut(175);	
-	$('img#resume').fadeOut(175);	
+	$('#resume').fadeOut(175);	
 	setTimeout(function() {
 	$('p#leftalign').fadeIn(175);	
 	}, 250);
