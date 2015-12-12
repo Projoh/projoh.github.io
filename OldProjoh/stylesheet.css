@@ -56,12 +56,12 @@ form{
 
    background-color:#efefef ;
 }
-p#para {
-display:none;
-font-size:15;
-}
 img#websites{
 display:none;
+max-height: 800px;
+max-width: 600px;
+height: auto;
+width: auto;
 }
 img#resume{
 display:none;
@@ -69,6 +69,14 @@ display:none;
 p#leftalign {
 display:none;
 font-size:15;
+}
+div#blackdiv {
+  margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: : auto;
+    background-color: black;
+    display:none;
 }
  
  
