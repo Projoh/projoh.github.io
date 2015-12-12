@@ -41,16 +41,12 @@
     width:100%;
     max-width: 474px; 
 }
-} 
+    body {
+      display:none;
+    }
 </style>
 
-<script> 
-$(document).ready(function() {
-  setTimeout(function() {
-  $('body').fadeIn(5000);
-  }, 100);
-});
-</script>
+
   </head>
 <body>
 
@@ -182,4 +178,11 @@ Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit no
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
+  <script> 
+$(window).load(function(){ 
+setTimeout(function() {
+  $('body').fadeIn(2005);
+  }, 10);
+ })
+</script>
 </html>
