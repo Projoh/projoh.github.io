@@ -13,28 +13,29 @@
       <body>
          <!-- HEADER/NAVIGATION BAR -->
          <ul class="tabs offset-s4 light-blue darken-2 ">
-            <li class="tab col s2"><a href="#test1" class="active" onclick="goToAbout()">
+            <li class="tab col s2">
+               <a  href="#abouttag" onclick="goToAbout()">
                <span class="white-text btn-flat waves-effect waves-light light-blue darken-2">
                ABOUT</span></a>
             </li>
             <li class="tab col s2 white-text">
-               <a onclick="goToProjects()">
+               <a href="#projectstag"onclick="goToProjects()">
                <span class="white-text btn-flat waves-effect waves-light light-blue darken-2">
                PROJECTS</span></a>
             </li>
             <li class="tab col s2">
-               <a onclick="goToSkills()">
+               <a href="#skillstag" onclick="goToSkills()">
                <span class="white-text btn-flat waves-effect waves-light light-blue darken-2">
                SKILLS</span></a>
             </li>
             <li class="tab col s2">
-               <a onclick="goToWork()">
+               <a href="#worktag" onclick="goToWork()">
                <span class="white-text btn-flat waves-effect waves-light light-blue darken-2">
                WORK</span></a>
             </li>
          </ul>
          <!-- CONTAINER FOR ALL SECTION -->
-         <div class="container">
+         <div class="container" name="abouttag">
             <!-- ABOUT SECTION -->
             <div id="aboutsection">
                <h2 >Residence</h2>
@@ -95,7 +96,7 @@
             </div>
             <!-- END OF ABOUT SECTION -->
             <!-- START OF PROJECTS SECTION -->
-            <div id="projectssection">
+            <div id="projectssection" name="projectstag">
                <h2> Projects </h2>
                <div class="row">
                   <div class="card large hoverable col s12 m4 l4">
@@ -141,7 +142,7 @@
             </div>
             <!-- END OF PROJECTS SECTION -->
             <!-- START OF SKILLS SECTION -->
-            <div id="skillssection">
+            <div id="skillssection" name="skillstag">
                <h2>Skills</h2>
                <ul class="collapsible collection with-header" id="programminglist" data-collapsible="expandable">
                   <li class="collection-header">
@@ -205,7 +206,7 @@
             </div>
             <!-- END OF SKILLS SECTION -->
             <!-- START OF WORK SECTION -->
-            <div id="worksection">
+            <div id="worksection" name="worktag">
                <h2> Work</h2>
                <ul class="collapsible" id="workcomputer" data-collapsible="expandable">
                   <li>

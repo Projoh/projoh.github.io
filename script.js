@@ -2,6 +2,9 @@ var fadespd = 175;
 var fadedelay = 300;
 
 $(document).ready(function() {
+		var websiteurl = $(location).attr('pathname');
+		
+		Materialize.toast('For more information ' + websiteurl, 4000)
 		if($(window).height() > 700) {
 			makeAllActive();
 		}
