@@ -47,8 +47,8 @@ function goToAbout() {
     fadeOutSection('skillssection');
     fadeOutSection('worksection');
     fadeInSection('aboutsection');
-    $('div#residencediv').fadeOut(20);
-    $('div#residencediv').fadeIn(1000);
+    $('div#residencediv').fadeOut(10);
+    $('div#residencediv').fadeIn(300);
     Materialize.showStaggeredList('#schoollist');
     Materialize.showStaggeredList('#worklist');
 }
