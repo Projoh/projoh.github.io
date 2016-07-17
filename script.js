@@ -11,6 +11,7 @@ jQuery(document).ready(function($) {
 		} else {
 			goTo(location.hash);
 		}
+		
 		if($(window).height() > 700) {
 			makeAllActive();
 		}
