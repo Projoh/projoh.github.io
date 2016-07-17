@@ -1,33 +1,36 @@
-var fadespd = 175;
-var fadedelay = 300;
+var fadespd = 100;
+var fadedelay = 100;
 
-$(document).ready(function() {
-		var websiteurl = window.location.pathname;
-		
-		Materialize.toast('For more information ' + websiteurl, 4000)
+jQuery(document).ready(function($) {
+		$('div#projectssection').fadeOut(0);
+	    $('div#skillssection').fadeOut(0);
+	    $('div#worksection').fadeOut(0);
+	    $('div#aboutsection').fadeOut(0);
+		if(location.hash == "" || location.hash == null) {
+			location.hash = "about";
+		} else {
+			goTo(location.hash);
+		}
 		if($(window).height() > 700) {
 			makeAllActive();
 		}
+
 	    $(".button-collapse").sideNav();
-	    $('div#projectssection').fadeOut(10);
-	    $('div#skillssection').fadeOut(10);
-	    $('div#worksection').fadeOut(10);
-	    goToAbout();
 		$('.collapsible').collapsible({
       		accordion : false 
-    	});
-	    
+    	});	  
+    	 $('ul.tabs').tabs();
 });
 
 function fadeOut(x) {
 	var newname = 'div#' + x;
-	$(newname).fadeOut(300);
+	$(newname).fadeOut(100);
 }
 
 function fadeIn(x) {
 	var newname = "div#" + x;
 	setTimeout(function() {
-	$(newname).fadeIn(100);
+	$(newname).fadeIn(fadespd);
 	},fadedelay)
 }
 
@@ -69,3 +72,39 @@ function makeAllActive() {
     	$('div#ex'+i).toggleClass( "active" );
 	}
 }
+
+function jumpTo(path) {
+	var url = location.href;  
+    location.href = "#"+path;
+}
+
+function goTo(path) {
+	path = path.replace('#', "");
+	$('ul.tabs').tabs('select_tab', path);
+	switch(path) {
+	    case 'about':
+	        goToAbout();
+	        break;
+	    case 'projects':
+	        goToProjects();
+	        break;
+	    case 'skills':
+	        goToSkills();
+	        break;
+	    case 'work':
+	        goToWork();
+	        break;
+	}
+}
+
+
+function pageManagerGoBack() {	
+	var lastpage = pages[pages.length-1];
+	if(!(lastpage == undefined)) {
+		jumpTo(lastpage);
+	}
+}
+
+$(window).on('hashchange', function() {
+	goTo('' + location.hash);
+});

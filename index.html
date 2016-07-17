@@ -13,24 +13,24 @@
       <body>
          <!-- HEADER/NAVIGATION BAR -->
          <ul class="tabs offset-s4 light-blue darken-2 ">
-            <li class="tab col s2">
-               <a  href="#abouttag" onclick="goToAbout()">
-               <span class="white-text btn-flat waves-effect waves-light light-blue darken-2">
+            <li class="tab col s2">    
+            <a  href="#about" id="abouttag" onclick="jumpTo('about')">           
+               <span id="aboutnav" class="white-text btn-flat waves-effect waves-light light-blue darken-2">
                ABOUT</span></a>
             </li>
             <li class="tab col s2 white-text">
-               <a href="#projectstag"onclick="goToProjects()">
-               <span class="white-text btn-flat waves-effect waves-light light-blue darken-2">
+               <a href="#projects" id="projectsnavtag" onclick="jumpTo('projects')">
+               <span  class=" white-text btn-flat waves-effect waves-light light-blue darken-2">
                PROJECTS</span></a>
             </li>
             <li class="tab col s2">
-               <a href="#skillstag" onclick="goToSkills()">
-               <span class="white-text btn-flat waves-effect waves-light light-blue darken-2">
+               <a href="#skills" id="skillstag"  onclick="jumpTo('skills')">
+               <span  id="skillsnav" class="white-text btn-flat waves-effect waves-light light-blue darken-2">
                SKILLS</span></a>
             </li>
             <li class="tab col s2">
-               <a href="#worktag" onclick="goToWork()">
-               <span class="white-text btn-flat waves-effect waves-light light-blue darken-2">
+               <a href="#work" id="worktag" onclick="jumpTo('work')">
+               <span id="worknav" class="white-text btn-flat waves-effect waves-light light-blue darken-2">
                WORK</span></a>
             </li>
          </ul>
@@ -277,10 +277,10 @@
             </div>
             <div class="col l4 offset-l2 s12">
                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#" onclick="goToAbout()">About</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#" onclick="goToSkills()">Skills</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#" onclick="goToProjects()">Projects</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#" onclick="goToWork()">Work</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#about" onclick="goToAbout()">About</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#skills" onclick="goToSkills()">Skills</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#projects" onclick="goToProjects()">Projects</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#work" onclick="goToWork()">Work</a></li>
                </ul>
             </div>
          </div>
