@@ -1,5 +1,5 @@
-var fadespd = 100;
-var fadedelay = 100;
+var fadeOutSpd = 195;
+var fadedelay = 0;
 
 jQuery(document).ready(function($) {
     $('div#projectssection').fadeOut(0);
@@ -25,14 +25,12 @@ jQuery(document).ready(function($) {
 
 function fadeOutSection(x) {
     var newname = 'div#' + x;
-    $(newname).fadeOut(100);
+    $(newname).fadeOut(fadeOutSpd);
 }
 
 function fadeInSection(x) {
     var newname = "div#" + x;
-    setTimeout(function() {
-        $(newname).fadeIn(fadespd);
-    }, fadedelay)
+    $(newname).fadeIn(225);
 }
 
 function goToProjects() {
@@ -47,7 +45,7 @@ function goToAbout() {
     fadeOutSection('skillssection');
     fadeOutSection('worksection');
     fadeInSection('aboutsection');
-    $('div#residencediv').fadeOut(10);
+    $('div#residencediv').fadeOut(0);
     $('div#residencediv').fadeIn(300);
     Materialize.showStaggeredList('#schoollist');
     Materialize.showStaggeredList('#worklist');
