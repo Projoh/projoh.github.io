@@ -32,7 +32,7 @@ function goTo(path) {
     path = path.replace('#', "");
     $('ul.tabs').tabs('select_tab', path);
     path = path+ 'section';
-    fadeOutSection(lastlocation);
+    $('div#' + lastlocation).toggle(false);
     fadeInSection(path);
     lastlocation = path;
     switch (path) {
@@ -57,10 +57,6 @@ function goTo(path) {
 }
 
 function initialize() {
-	$('div#projectssection').fadeOut(0);
-    $('div#skillssection').fadeOut(0);
-    $('div#worksection').fadeOut(0);
-    $('div#aboutsection').fadeOut(0);
     if (location.hash == "" || location.hash == null) {
         location.hash = "about";
     } else {
