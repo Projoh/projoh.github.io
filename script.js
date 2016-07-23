@@ -57,7 +57,7 @@ function goTo(path) {
 }
 
 function initialize() {
-    if (location.hash == "" || location.hash == null) {
+    if (location.hash == "" || location.hash == null || location.hash == "!") {
         location.hash = "about";
     } else {
         goTo(location.hash);
