@@ -58,7 +58,7 @@ function goTo(path) {
 
 function initialize() {
 	Materialize.toast('k ' + location.hash, 4000)
-    if (location.hash == "" || location.hash == null || location.hash == "!") {
+    if (location.hash == "" || location.hash == null || location.hash == "#!") {
         location.hash = "about";
     } else {
         goTo(location.hash);
