@@ -2,6 +2,7 @@ jQuery(document).ready(function($) {
     fadeOutSpd = 195;
     fadedelay = 0;
 	lastlocation = 'aboutsection';
+    color = 'light-blue';
 	initialize();
 });
 
@@ -19,13 +20,30 @@ function fadeInSection(x) {
 
 function makeAllActive() {
     for (i = 0; i < 10; i++) {
-        $('div#ex' + i).toggleClass("active");
+        $('div#ex' + i).toggleClass("active");        
     }
 }
 
 function jumpTo(path) {
     var url = location.href;
     location.href = "#" + path;
+    
+}
+
+function changeColor(newColor) {
+    if(!(color == newColor)) {
+                // $("footer").toggleClass(color);
+                // $("footer").toggleClass(newColor);
+                changeToggle("footer", color, newColor);
+                changeToggle("ul#ulid", color, newColor);
+                color = newColor;
+                $('meta[name=theme-color]').attr('content', newColor);
+            }
+}
+
+function changeToggle(newToggle, oldColor, newColor) {
+    $(newToggle).toggleClass(oldColor);
+    $(newToggle).toggleClass(newColor);
 }
 
 function goTo(path) {
@@ -35,21 +53,25 @@ function goTo(path) {
     $('div#' + lastlocation).toggle(false);
     fadeInSection(path);
     lastlocation = path;
+
     switch (path) {
         case 'aboutsection':
             $('div#residencediv').fadeOut(0);
     		$('div#residencediv').fadeIn(300);
     		Materialize.showStaggeredList('#schoollist');
     		Materialize.showStaggeredList('#worklist');
+            changeColor('light-blue');
             break;
         case 'projectssection':
-            goToProjects();
+            changeColor('purple'); 
             break;
         case 'skillssection':
             Materialize.showStaggeredList('#otherskills');
     		Materialize.showStaggeredList('#programminglist');
+            changeColor('yellow');
             break;
         case 'worksection':
+            changeColor('green');
             Materialize.showStaggeredList('#workcomputer');
     		Materialize.showStaggeredList('#volunteer');
             break;
