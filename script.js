@@ -74,7 +74,7 @@ function goTo(path) {
             changeColor('teal');
             break;
         case 'worksection':
-            changeColor('brown');
+            changeColor('indigo');
             Materialize.showStaggeredList('#workcomputer');
     		Materialize.showStaggeredList('#volunteer');
             break;
