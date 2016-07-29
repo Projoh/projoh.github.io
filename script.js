@@ -37,6 +37,9 @@ function changeColor(newColor) {
                 changeToggle("footer", color, newColor);
                 changeToggle("ul#ulid", color, newColor);
                 color = newColor;
+                if(newColor == 'light-blue'){
+                    newColor = '#0288d1';
+                }
                 $('meta[name=theme-color]').attr('content', newColor);
             }
 }
@@ -68,10 +71,10 @@ function goTo(path) {
         case 'skillssection':
             Materialize.showStaggeredList('#otherskills');
     		Materialize.showStaggeredList('#programminglist');
-            changeColor('yellow');
+            changeColor('teal');
             break;
         case 'worksection':
-            changeColor('green');
+            changeColor('brown');
             Materialize.showStaggeredList('#workcomputer');
     		Materialize.showStaggeredList('#volunteer');
             break;
