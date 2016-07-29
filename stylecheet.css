@@ -15,3 +15,20 @@
      of the button to still show through. */
       background-color: #01579b;
     }
+
+.waves-effect.waves-brown .waves-ripple {
+     /* The alpha value allows the text and background color
+     of the button to still show through. */
+      background-color: #795548;
+    }
+.waves-effect.waves-purple .waves-ripple {
+     /* The alpha value allows the text and background color
+     of the button to still show through. */
+      background-color: #9c27b0;
+    }
+
+.waves-effect.waves-teal .waves-ripple {
+     /* The alpha value allows the text and background color
+     of the button to still show through. */
+      background-color: #009688;
+    }

@@ -3,6 +3,7 @@ jQuery(document).ready(function($) {
     fadedelay = 0;
 	lastlocation = 'aboutsection';
     color = 'light-blue';
+    wavecolor = 'wave-blue';
 	initialize();
 });
 
@@ -35,7 +36,11 @@ function changeColor(newColor) {
                 // $("footer").toggleClass(color);
                 // $("footer").toggleClass(newColor);
                 changeToggle("footer", color, newColor);
-                changeToggle("ul#ulid", color, newColor);
+                changeToggle("ul#ulid", color, newColor);              
+                for (i = 0; i < 11; i++) {
+                    changeToggle('div#ex' + i, wavecolor, 'waves-' + newColor);        
+                }
+                wavecolor = 'waves-' + newColor;
                 color = newColor;
             }
 }
