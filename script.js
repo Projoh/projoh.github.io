@@ -37,7 +37,7 @@ function changeColor(newColor) {
                 // $("footer").toggleClass(newColor);
                 changeToggle("footer", color, newColor);
                 changeToggle("ul#ulid", color, newColor);              
-                for (i = 0; i < 11; i++) {
+                for (i = 0; i < 15; i++) {
                     changeToggle('div#ex' + i, wavecolor, 'waves-' + newColor);        
                 }
                 wavecolor = 'waves-' + newColor;
