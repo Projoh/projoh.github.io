@@ -68,8 +68,8 @@ function goTo(path) {
             $('meta[name=theme-color]').attr('content', '#0288d1');
             break;
         case 'projectssection':
-            changeColor('red'); 
-            $('meta[name=theme-color]').attr('content', '#f44336');
+            changeColor('deep-purple'); 
+            $('meta[name=theme-color]').attr('content', '#673AB7');
             break;
         case 'skillssection':
             Materialize.showStaggeredList('#otherskills');
