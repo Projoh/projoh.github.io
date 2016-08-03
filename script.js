@@ -74,8 +74,8 @@ function goTo(path) {
         case 'skillssection':
             Materialize.showStaggeredList('#otherskills');
     		Materialize.showStaggeredList('#programminglist');
-            changeColor('teal');
-            $('meta[name=theme-color]').attr('content', 'teal');
+            changeColor('light-green');
+            $('meta[name=theme-color]').attr('content', '#8bc34a');
             break;
         case 'worksection':
             changeColor('brown');
