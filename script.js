@@ -21,14 +21,14 @@ function fadeInSection(x) {
 
 function makeAllActive() {
     for (i = 0; i < 10; i++) {
-        $('div#ex' + i).toggleClass("active");        
+        $('div#ex' + i).toggleClass("active");
     }
 }
 
 function jumpTo(path) {
     var url = location.href;
     location.href = "#" + path;
-    
+
 }
 
 function changeColor(newColor) {
@@ -36,9 +36,9 @@ function changeColor(newColor) {
                 // $("footer").toggleClass(color);
                 // $("footer").toggleClass(newColor);
                 changeToggle("footer", color, newColor);
-                changeToggle("ul#ulid", color, newColor);              
+                changeToggle("ul#ulid", color, newColor);
                 for (i = 0; i < 15; i++) {
-                    changeToggle('div#ex' + i, wavecolor, 'waves-' + newColor);        
+                    changeToggle('div#ex' + i, wavecolor, 'waves-' + newColor);
                 }
                 wavecolor = 'waves-' + newColor;
                 color = newColor;
@@ -68,7 +68,7 @@ function goTo(path) {
             $('meta[name=theme-color]').attr('content', '#0288d1');
             break;
         case 'projectssection':
-            changeColor('pink'); 
+            changeColor('pink');
             $('meta[name=theme-color]').attr('content', '#e91e63');
             break;
         case 'skillssection':
@@ -84,6 +84,14 @@ function goTo(path) {
     		Materialize.showStaggeredList('#volunteer');
             break;
     }
+}
+
+function openModal(modal) {
+  $('#modal' + modal).openModal();
+}
+
+function closeModal(modal) {
+  $('#modal' + modal).closeModal();
 }
 
 function initialize() {
