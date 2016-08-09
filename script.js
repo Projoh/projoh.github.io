@@ -33,8 +33,6 @@ function jumpTo(path) {
 
 function changeColor(newColor) {
     if(!(color == newColor)) {
-                // $("footer").toggleClass(color);
-                // $("footer").toggleClass(newColor);
                 changeToggle("footer", color, newColor);
                 changeToggle("ul#ulid", color, newColor);
                 for (i = 0; i < 15; i++) {
@@ -88,6 +86,7 @@ function goTo(path) {
 
 function openModal(modal) {
   $('#modal' + modal).openModal();
+  $('div#divimagesmodel'+modal).show();
 }
 
 function closeModal(modal) {
@@ -95,6 +94,8 @@ function closeModal(modal) {
 }
 
 function initialize() {
+    $('div#divimagesmodel1').hide();
+    $('div#divimagesmodel3').hide();
     if (location.hash == "" || location.hash == null || location.hash == "#!") {
         location.hash = "about";
     } else {
