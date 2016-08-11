@@ -32,6 +32,9 @@
      of the button to still show through. */
       background-color: #8bc34a;
     }
+li.listitem {
+  opacity: 0;
+}
 h1 {
   font-weight: 600;
 }

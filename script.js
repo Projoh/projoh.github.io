@@ -28,7 +28,6 @@ function makeAllActive() {
 function jumpTo(path) {
   var url = location.href;
   location.href = "#" + path;
-
 }
 
 function changeColor(newColor) {
@@ -49,6 +48,8 @@ function changeToggle(newToggle, oldColor, newColor) {
 }
 
 function goTo(path) {
+
+    $('li.listitem').css( "opacity", 0 );
   path = path.replace('#', "");
   $('ul.tabs').tabs('select_tab', path);
   path = path+ 'section';
