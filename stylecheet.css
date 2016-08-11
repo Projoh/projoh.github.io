@@ -33,5 +33,11 @@
       background-color: #8bc34a;
     }
 h1 {
-  font-weight: 400;
+  font-weight: 600;
 }
+.modal {
+  width: 85% !important ;
+  max-height: 88% !important;
+  overflow-y: hidden !important ; }
+  .modal.modal-fixed-footer {
+    height: 88% !important;}
