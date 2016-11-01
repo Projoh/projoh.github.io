@@ -44,9 +44,15 @@
             </li>
          </ul>
          <!-- CONTAINER FOR ALL SECTION -->
+
          <div class="container" name="container">
             <!-- ABOUT SECTION -->
+
             <div id="aboutsection" style="display: none;">
+              <div class="parallax-container">
+                <div class="parallax"><img src="images/bg.jpg"></div>
+                <br><br><br><br><center><div class="red-text"> <img src="images/profile.png"></div></center>
+              </div>
                <h1>Residence</h1>
                <div class="row ">
                   <div class="col ">
@@ -439,7 +445,7 @@
          <div id="modal2" class="modal modal-fixed-footer">
             <div class="modal-content">
                <h1 class="boldh1">Expo</h1>
-               <h4 class="grey-text">Engineering Expo by the Universi`ty of South Florida</h4>
+               <h4 class="grey-text">Engineering Expo by the University of South Florida</h4>
                <div class="chip">
                   <i class="tiny material-icons">android</i>
                   Android
@@ -663,6 +669,7 @@
 
               ga('create', 'UA-80849181-1', 'auto');
               ga('send', 'pageview');
+              $('.parallax').parallax();
             }
 
             $(window).on('hashchange', function() {
