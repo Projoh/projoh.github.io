@@ -339,7 +339,7 @@
                         August 2016</a>
                      </div>
                      <div class="collapsible-body">
-                        <p>I was a Android intern at Timeset social media app at RnR Associates, Sarasota, Florida. I was designing and coding new features, as well as providing fixes for issues and bugs.
+                        <p>I was a Android intern at <a href="http://www.timeset.com/">Timeset</a> social media app at <a href="http://www.rnrassociates.com/">RnR Associates</a>, Sarasota, Florida. I was designing and coding new features, as well as providing fixes for issues and bugs.
                         </p>
                      </div>
                   </li>
@@ -349,7 +349,7 @@
                         <a class="grey-text">October 2013 to April 2014</a>
                      </div>
                      <div class="collapsible-body">
-                        <p> I was an I.T administrator for Red Crescent Clinic, a local medical clinic which contained over 8 computers and constant maintenance in regards to networking, hardware, and software.
+                        <p> I was an I.T administrator for <a href="http://www.redcrescenttampa.org/">Red Crescent Clinic</a>, a local medical clinic which contained over 8 computers and constant maintenance in regards to networking, hardware, and software.
                         </p>
                      </div>
                   </li>
@@ -588,13 +588,12 @@
               if(!(color == newColor)) {
                 changeToggle("footer", color, newColor);
                 changeToggle("ul#ulid", color, newColor);
-                // REMOVED FEATURE: MADE ALL THE LIST ITEMS HAVE A WAVE EFFECT WITH A COLOR RELATED TO THE
-                // PAGE.
-                // for (i = 0; i < 15; i++) {
-                //   changeToggle('div#ex' + i, wavecolor, 'waves-' + newColor);
-                // }
+
+                for (i = 0; i < 15; i++) {
+                  changeToggle('div#ex' + i, wavecolor, 'waves-' + newColor);
+                }
                 wavecolor = 'waves-' + newColor;
-                // color = newColor;
+                color = newColor;
               }
             }
 
