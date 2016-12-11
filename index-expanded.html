@@ -121,8 +121,13 @@
                </ul>
                <h1><a href="#work" class="black-text">Work</a></h1>
                <ul id="worklist" class="collapsible popout" data-collapsible="accordion">
+                 <li class="listitem">
+                    <div class="collapsible-header waves-effect waves-block waves-blue darken-2 blue white-text" onclick="Materialize.toast('For more information, Click on Work', 4000)">
+                       <i class="material-icons">android</i>Android Developer at Citadel Casiong Solutions
+                    </div>
+                 </li>
                   <li class="listitem">
-                     <div class="collapsible-header waves-effect waves-block waves-blue darken-2 blue white-text" onclick="Materialize.toast('For more information, Click on Work', 4000)">
+                     <div class="collapsible-header  waves-effect waves-block waves-blue" onclick="Materialize.toast('For more information, Click on Work', 4000)">
                         <i class="material-icons">android</i>Android Developer Intern at Timeset at RnR Associates
                      </div>
                   </li>
@@ -330,6 +335,16 @@
             <div id="worksection" name="worktag" style="display: none;">
                <h2> Work</h2>
                <ul class="collapsible collection with-header" id="workcomputer" data-collapsible="expandable">
+                 <li class="listitem">
+                    <div class="collapsible-header  waves-effect waves-block waves-blue" id="ex5">
+                       <i class="material-icons">&#xE859;</i> Android Developer
+                       <a class="grey-text">December 2016</a>
+                    </div>
+                    <div class="collapsible-body">
+                       <p>I am an Android Developer for Citadel Casing Solutions, working on their Android mobile application.
+                       </p>
+                    </div>
+                 </li>
                   <li class="listitem">
                      <div class="collapsible-header  waves-effect waves-block waves-blue" id="ex5">
                         <i class="material-icons">&#xE859;</i> Android Developer Intern
@@ -657,7 +672,7 @@
                 goTo(location.hash);
               }
 
-              if ($(window).height() > 700) {
+              if ($(window).height() > 900) {
                 makeAllActive();
               }
 
