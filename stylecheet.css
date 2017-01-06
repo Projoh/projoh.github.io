@@ -131,6 +131,6 @@ position: absolute; -webkit-backface-visibility: hidden
   padding: 0 !important;
   margin-bottom: 0 !important;
 }
-span.nopadding {
-  padding: 0 !important;
+a.nopadding {
+  padding-top: 5px !important;
 }
