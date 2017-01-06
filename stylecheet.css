@@ -73,7 +73,9 @@
   }
 .tabs .indicator {
     background-color: white;
+    display: none;
 }
+.tabs .tab a.active { border-bottom: 2px solid white; }
 .waves-effect.waves-blue .waves-ripple {
      /* The alpha value allows the text and background color
      of the button to still show through. */
@@ -119,4 +121,14 @@ height: 100%;
 top: 0;
 left: 0;
 position: absolute; -webkit-backface-visibility: hidden
+}
+/*.tabs{
+  display: flex !important;
+}*/
+.navbar {
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+span.nopadding {
+  padding: 0 !important;
 }
