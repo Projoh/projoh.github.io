@@ -106,11 +106,13 @@ h1 {
 }
 .modal {
   width: 85% !important ;
-  max-height: 88% !important;
+  max-height: 92% !important;
   overflow-y: hidden !important ;
+  top: 5% !important;
 }
 .modal.modal-fixed-footer {
-    height: 88% !important;
+    height: 92% !important;
+    top: 5% !important;
   }
 .parallax-container {
           height: 350px;
