@@ -92,6 +92,11 @@
      of the button to still show through. */
       background-color: #8bc34a;
     }
+.waves-effect.waves-pink .waves-ripple {
+         /* The alpha value allows the text and background color
+         of the button to still show through. */
+          background-color: #e91e63;
+        }
 
 .waves-effect.waves-teal .waves-ripple {
      /* The alpha value allows the text and background color
