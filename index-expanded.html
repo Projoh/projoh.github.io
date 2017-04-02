@@ -135,7 +135,7 @@
 			<div id="projectssection" name="projectstag" style="display: none;">
 				<h2> Projects </h2>
 				<div class="row">
-					<div onclick="openModal(2)" class="card large hoverable col s12 m4 l4">
+					<div onclick="openModal(2)" class="card large hoverable col s12 m4 l4 projectsmodal">
 						 <div class="card-image waves-effect waves-block waves-light">
 								<img src="images/min/expo2-min.jpg" alt="Example image of the Engineering Expo, a event by the University of South Florida">
 						 </div>
@@ -144,7 +144,7 @@
 								<h4>Engineering Expo</h4>
 						 </div>
 						 <div class="card-content">
-								<p>An educational free event on the University of South Florida.
+								<p>An educational free event on the University of South Florida with an iOS and Android mobile application.
 								</p>
 						 </div>
 						 <div class="card-action">
@@ -153,7 +153,7 @@
 						 </div>
 						 </a>
 					</div>
-					<div onclick="openModal(4)" class="card large hoverable col s12 m4 l4">
+					<div onclick="openModal(4)" class="card large hoverable col s12 m4 l4 projectsmodal">
 						 <div class="card-image waves-effect waves-block waves-light">
 								<img src="images/min/citadelLogo-min.png" alt="An image of the custom hand wired keyboard created by Mohamed Yassin/Projoh">
 						 </div>
@@ -171,7 +171,24 @@
 						</div>
 						</a>
 					</div>
-					<div onclick="openModal(5)" class="card large hoverable col s12 m4 l4">
+					<div onclick="openModal(1)" class="card large hoverable col s12 m4 l4 projectsmodal">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img src="images/min/download-min.png" alt="Image of Many Message, a App on the Google Play store created by Mohamed Yassin/Projoh">
+						</div>
+						<div class="card-title"> <span class="card-title grey-text text-darken-4">
+                        <h4>ManyMessage</h4>
+                     </div>
+                     <div class="card-content">
+                        <p>A mass texting application for Android that allows the user to use custom variables in their message.
+                        </p>
+                     </div>
+                     <div class="card-action">
+                        <a href="#projects" onclick="openModal(1)" class="right">More</a>
+                        <a href="https://play.google.com/store/apps/details?id=androidapps.mayassin.com.manymessage" class="pink-text">Google Play Store</a>
+                     </div>
+                     </a>
+                  </div>
+					<div onclick="openModal(5)" class="card large hoverable col s12 m4 l4 projectsmodal">
 						 <div class="card-image waves-effect waves-block waves-light">
 								<img src="images/min/hh-min.jpg" alt="An image of the custom hand wired keyboard created by Mohamed Yassin/Projoh">
 						 </div>
@@ -185,45 +202,98 @@
 						 </div>
 						 <div class="card-action">
 							 <a href="#projects" onclick="openModal(4)" class="right">More</a>
-							 <a href="https://github.com/Projoh/SAAS-No-Harass" class="pink-text" >GITHUB</a>
+							 <a href="https://github.com/Projoh/SAAS-No-Harass" class="pink-text" >CODE</a>
 						 </div>
-						 </a>
-					</div>
-					<div onclick="openModal(1)" class="card large hoverable col s12 m4 l4">
-						<div class="card-image waves-effect waves-block waves-light">
-							<img src="images/min/download-min.png" alt="Image of Many Message, a App on the Google Play store created by Mohamed Yassin/Projoh">
-						</div>
-						<div class="card-title"> <span class="card-title grey-text text-darken-4">
-                        <h4>ManyMessage</h4>
-                     </div>
-                     <div class="card-content">
-                        <p>A mass texting application for Android that allows the user to use custom variables in their message.
-                        </p>
-                     </div>
-                     <div class="card-action">
-                        <a href="#projects" onclick="openModal(1)" class="right">More</a>
-                        <a href="https://play.google.com/store/apps/details?id=com.projoh.android.manymessage&hl=en" class="pink-text">Google Play Store</a>
-                     </div>
-                     </a>
-                  </div>
-                  <div onclick="openModal(3)" class="card large hoverable col s12 m4 l4">
-                     <div class="card-image waves-effect waves-block waves-light">
-                        <img src="images/min/keyboardpic-min.jpg" alt="An image of the custom hand wired keyboard created by Mohamed Yassin/Projoh">
-                     </div>
-                     <div class="card-title">
-                        <span class="card-title grey-text text-darken-4">
-                        <h4 >Handwired Keyboard</h4>
-                     </div>
-                     <div class="card-content">
-                        <p>A mechanical keyboard built completely from scratch.
-                        </p>
-                     </div>
-                     <div class="card-action">
-                        <a href="#projects" onclick="openModal(3)" class="right">Information</a>
-                     </div>
-                     </a>
-                  </div>
-               </div>
+					 </a>
+				 </div>
+
+				 <div onclick="openModal(3)" class="card large hoverable col s12 m4 l4 projectsmodal">
+					 <div class="card-image waves-effect waves-block waves-light">
+						 <img src="images/min/keyboardpic-min.jpg" alt="An image of the custom hand wired keyboard created by Mohamed Yassin/Projoh">
+					 </div>
+					 <div class="card-title">
+						 <span class="card-title grey-text text-darken-4">
+							 <h4 >Handwired Keyboard</h4>
+						 </div>
+						 <div class="card-content">
+							 <p>A mechanical keyboard built completely from scratch.
+							 </p>
+						 </div>
+						 <div class="card-action">
+							 <a href="#projects" onclick="openModal(3)" class="right">Information</a>
+						 </div>
+					 </a>
+				 </div>
+				 <div onclick="Materialize.toast('More information coming soon!', 3000)" class="card large hoverable col s12 m4 l4 projectsmodal">
+				 	 <div class="card-image waves-effect waves-block waves-light">
+				 			<img src="http://placehold.it/300x300" alt="Example image of the Modal 6">
+				 	 </div>
+				 	 <div class="card-title">
+				 			<span class="card-title grey-text text-darken-4">
+				 			<h4>Celebre</h4>
+				 	 </div>
+				 	 <div class="card-content">
+				 			<p>A note taking application. More info coming soon!
+				 			</p>
+				 	 </div>
+				 	 <!-- <div class="card-action" onclick="Materialize.toast('More information comming soon!', 3000)"> -->
+				 			<!-- <a href="#projects" onclick="openModal(2)" class="right">More</a>
+				 			<a href="http://expo.eng.usf.edu/" class="pink-text" >OFFICIAL WEBSITE</a> -->
+				 	 <!-- </div> -->
+				 	 </a>
+				 </div>
+
+				 <div onclick="Materialize.toast('More information coming soon!', 3000)" class="card large hoverable col s12 m4 l4 projectsmodal">
+				 	<div class="card-image waves-effect waves-block waves-light">
+				 		 <img src="http://placehold.it/300x300" alt="Example image of the Modal 6">
+				 	</div>
+				 	<div class="card-title">
+				 		 <span class="card-title grey-text text-darken-4">
+				 		 <h4>Notfall</h4>
+				 	</div>
+				 	<div class="card-content">
+				 		 <p>A first responders application and concept. This idea placed 2nd in MinneHack 2016.
+				 		 </p>
+				 	</div>
+				 	<!-- <div class="card-action" onclick="Materialize.toast('More information comming soon!', 3000)"> -->
+				 		 <!-- <a href="#projects" onclick="openModal(2)" class="right">More</a>
+				 		 <a href="http://expo.eng.usf.edu/" class="pink-text" >OFFICIAL WEBSITE</a> -->
+				 	<!-- </div> -->
+				 	</a>
+				 </div>
+
+				 <div onclick="Materialize.toast('More information coming soon!', 3000)" class="card large hoverable col s12 m4 l4 projectsmodal">
+				  <div class="card-image waves-effect waves-block waves-light">
+				 		<img src="http://placehold.it/300x300" alt="Example image of the Modal 6">
+				  </div>
+				  <div class="card-title">
+				 		<span class="card-title grey-text text-darken-4">
+				 		<h4>PingPong</h4>
+				  </div>
+				  <div class="card-content">
+				 		<p>More information coming soon.
+				 		</p>
+				  </div>
+				  <!-- <div class="card-action" onclick="Materialize.toast('More information comming soon!', 3000)"> -->
+				 		<!-- <a href="#projects" onclick="openModal(2)" class="right">More</a>
+				 		<a href="http://expo.eng.usf.edu/" class="pink-text" >OFFICIAL WEBSITE</a> -->
+				  <!-- </div> -->
+				  </a>
+				 </div>
+
+
+
+
+
+
+			 </div>
+
+
+
+
+
+
+
 							 <h2> Awards </h2>
 							 <div class="row">
 								 <ul class="collapsible collection" id="awards" data-collapsible="accordion">
@@ -654,12 +724,14 @@
 							 <img class="col s12 m12 l4" src="images/min/manymessage1-min.png">
 							 <img class="col s12 m12 l4"src="images/min/manymessage2-min.png">
 							 <img class="col s12 m12 l4" src="images/min/manymessage3-min.png">
+							 <img class="col s12 m12 l4"src="images/min/manymessage4-min.png">
+							 <img class="col s12 m12 l4" src="images/min/manymessage5-min.png">
 						</div>
 						</p>
 				 </div>
 				 <div class="modal-footer">
 						<a class=" modal-action modal-close waves-effect btn-flat">Done</a>
-						<a class=" modal-action modal-close waves-effect btn-flat pink-text">Google Play Store</a>
+						<a   href="https://play.google.com/store/apps/details?id=androidapps.mayassin.com.manymessage" class=" modal-action modal-close waves-effect btn-flat pink-text">Google Play Store</a>
 				 </div>
 			</div>
 			<div id="modal2" class="modal modal-fixed-footer">
@@ -687,7 +759,7 @@
 							 Google Maps
 						</div>
 						<br><br>
-						<p class="flow-text"> Engineering Expo is a two-day open house event across the Universty's campus showcasing Engineering feats. My function as a board member is to write a phone application that will assist visitors when navigating the college campus, as well as find show times and any event information.
+						<p class="flow-text"> Engineering Expo is a two-day open house event across the Universty's campus showcasing Engineering feats. There were approximately 10,000 visitors to this event. My function as a board member is to write a phone application that will assist visitors when navigating the college campus, as well as find show times and any event information.
 							<h3>Android Images</h3>
 							<div class="row" id="divimagesmodel1">
 								 <img class="col s12 m12 l4" src="images/min/android1-min.png">
@@ -792,7 +864,9 @@
 								 <a class="white-text" href="https://drive.google.com/file/d/0B8y9O7HlJdm6b2RzQTgyQmhVeGc/view?usp=sharing">Download Resume as PDF</a><br>
                <p class="grey-text text-lighten-4">Software developer, Computer Engineering Student<br>
                   <!-- Email: <a  itemprop="email" href='&#109;ailto&#58;mo%68am&#101;d&#46;%61la%64%&#54;&#57;&#110;&#46;y%61s&#115;i%6E%40g%&#54;Dail&#46;&#99;o%6D'>mo&#104;&#97;med&#46;a&#108;adi&#110;&#46;&#121;&#97;s&#115;in&#64;&#103;&#109;&#97;il&#46;c&#111;m</a> -->
-                  Contact Email : <mark class="white"><a href="mailto:mohamed@mayassin.com"> mohamed@mayassin.com</a></mark>
+                  Contact Email : <mark class="white"><a href="mailto:mohamed@mayassin.com"> mohamed@mayassin.com</a></mark><br>
+									<a class="white-text" href="https://www.linkedin.com/in/mohamed-yassin-a03738104/">LinkedIn</a> or
+									 <a class="white-text" href="https://www.linkedin.com/in/mohamed-yassin-a03738104/"> Github</a>
                </p>
             </div>
             <div class="col l4 offset-l2 s12">
@@ -815,7 +889,7 @@
       </div>
       <div class="footer-copyright">
          <div class="container">
-            © 2016 Mohamed Yassin
+            © 2017 Mohamed Yassin
          </div>
       </div>
    </footer>
