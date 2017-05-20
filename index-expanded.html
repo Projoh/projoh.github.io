@@ -10,7 +10,7 @@
 	<meta name="description" content="Mohamed Yassin's Portfolio, Software Developer, Computer Engineering at USF">
 	<!-- CSS PART -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 	<link rel="stylesheet" href="stylecheet.css">
 	<link rel="icon" type="image/png" href="favicon.png" />
 </head>
@@ -113,22 +113,22 @@
 					</li>
 				</ul>
 				<h1><a href="#work" class="black-text">Work</a></h1>
-				<ul id="worklist" class="collapsible popout" data-collapsible="accordion">
+				<ul id="worklist" class="collapsible" data-collapsible="accordion">
 					<li class="listitem">
-						<div class="collapsible-header waves-effect waves-block waves-blue darken-2 blue white-text" onclick="jumpTo('work')"> <i class="material-icons">&#xE335;</i>Computer Science Intern at BMW Manufacturing</div>
+						<div class="collapsible-header waves-effect waves-block waves-blue darken-2 blue white-text" onclick="jumpToAndExpand('work',0)"> <i class="material-icons">&#xE335;</i>Computer Science Intern at BMW Manufacturing</div>
 					</li>
 					<li class="listitem">
-						<div class="collapsible-header  waves-effect waves-block waves-blue" onclick="jumpTo('work')"> <i class="material-icons">android</i>Fullstack Developer at Citadel Casing Solutions</div>
+						<div class="collapsible-header  waves-effect waves-block waves-blue" onclick="jumpToAndExpand('work',1)"> <i class="material-icons">android</i>Fullstack Developer at Citadel Casing Solutions</div>
 					</li>
 					<li class="listitem">
-						<div class="collapsible-header  waves-effect waves-block waves-blue" onclick="jumpTo('work')"> <i class="material-icons">android</i>Android Developer Intern at Timeset at RnR Associates</div>
+						<div class="collapsible-header  waves-effect waves-block waves-blue" onclick="jumpToAndExpand('work',2)"> <i class="material-icons">android</i>Android Developer Intern at Timeset at RnR Associates</div>
 					</li>
 					<li class="listitem">
-						<div class="collapsible-header  waves-effect waves-block waves-blue" onclick="jumpTo('work')"> <i class="material-icons">wc</i>IT Administrator at Red Crescent Health Clinic</div>
+						<div class="collapsible-header  waves-effect waves-block waves-blue" onclick="jumpToAndExpand('work',3)"> <i class="material-icons">wc</i>IT Administrator at Red Crescent Health Clinic</div>
 						<div class="collapsible-body"></div>
 					</li>
 					<li class="listitem">
-						<div class="collapsible-header  waves-effect waves-block waves-blue" onclick="jumpTo('work'))"> <i class="material-icons">build</i>Webmaster and Administrator at Johsminecraft Inc</div>
+						<div class="collapsible-header  waves-effect waves-block waves-blue" onclick="jumpToAndExpand('work',4)"> <i class="material-icons">build</i>Webmaster and Administrator at Johsminecraft Inc</div>
 						<div class="collapsible-body"></div>
 					</li>
 				</ul>
@@ -491,7 +491,7 @@
                     </div>
                  </li>
 								 <li class="listitem">
-                    <div class="collapsible-header  waves-effect waves-block waves-blue" id="ex5">
+                    <div class="collapsible-header  waves-effect waves-block waves-blue" id="ex6">
                        <i class="material-icons">&#xE859;</i> Fullstack Android/Backend Developer
                        <a class="grey-text">December 2016 to April 2017</a>
                     </div>
@@ -501,7 +501,7 @@
                     </div>
                  </li>
                   <li class="listitem">
-                     <div class="collapsible-header  waves-effect waves-block waves-blue" id="ex5">
+                     <div class="collapsible-header  waves-effect waves-block waves-blue" id="ex7">
                         <i class="material-icons">&#xE859;</i> Android Developer Intern
                         <a class="grey-text">July
                         2016
@@ -513,7 +513,7 @@
                         </p>
                      </div>
                   </li>
-                  <li class="listitem">
+                  <li class="listitem" id="work2">
                      <div class="collapsible-header  waves-effect waves-block waves-blue" id="ex6">
                         <i class="material-icons">&#xE8C0;</i>I.T Administrator
                         <a class="grey-text">October 2013 to April 2014</a>
@@ -524,7 +524,7 @@
                      </div>
                   </li>
                   <li class="listitem">
-                     <div class="collapsible-header  waves-effect waves-block waves-blue" id="ex7">
+                     <div class="collapsible-header  waves-effect waves-block waves-blue" id="ex6">
                         <i class="material-icons">&#xE869;</i>Computer Repairman
                         <a class="grey-text">December 2011
                         to Present</a>
@@ -535,7 +535,7 @@
                      </div>
                   </li>
                   <li class="listitem">
-                     <div class="collapsible-header  waves-effect waves-block waves-blue" id="ex8">
+                     <div class="collapsible-header  waves-effect waves-block waves-blue" id="ex7">
                         <i class="material-icons">&#xE021;</i>Server Administrator
                         <a class="grey-text">December 2010 to December 2011</a>
                      </div>
@@ -548,7 +548,7 @@
                <h2>Volunteer Work</h2>
                <ul class="collapsible collection with-header" id="volunteer" data-collapsible="expandable">
                   <li class="listitem">
-                     <div class="collapsible-header  waves-effect waves-block waves-blue" id="ex9">
+                     <div class="collapsible-header  waves-effect waves-block waves-blue" id="ex11">
                         <i class="material-icons">&#xE8C0;</i> Engineering Expo Android Developer
                         <a class="grey-text">Spring 2016 to Spring 2017</a>
                      </div>
@@ -558,7 +558,7 @@
                      </div>
                   </li>
                   <li class="listitem">
-                     <div class="collapsible-header  waves-effect waves-block waves-blue" id="ex10">
+                     <div class="collapsible-header  waves-effect waves-block waves-blue" id="ex12">
                         <i class="material-icons">&#xE8FD;</i>Clinic Help Desk
                         <a class="grey-text">October 2013
                         to April
@@ -570,7 +570,7 @@
                      </div>
                   </li>
                   <li class="listitem">
-                     <div class="collapsible-header  waves-effect waves-block waves-blue" id="ex11">
+                     <div class="collapsible-header  waves-effect waves-block waves-blue" id="ex13">
                         <i class="material-icons">&#xE896;</i>Video Game Tournaments
                         <a class="grey-text">October 2013 to December 2014</a>
                      </div>
@@ -588,7 +588,7 @@
          <!-- END OF MODALS FOR PROJECTS -->
          <!-- SCRIPTS-->
          <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+				 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
          <script async type="text/javascript">
             jQuery(document).ready(function($) {
               fadeOutSpd = 195;
@@ -627,6 +627,14 @@
             function jumpTo(path) {
               var url = location.href;
               location.href = "#" + path;
+            }
+						function jumpToAndExpand(path , listID) {
+              var url = location.href;
+              location.href = "#" + path;
+							setTimeout(function() {
+								$('.collapsible' + '#workcomputer').collapsible('open', listID);
+							}, 350);
+							// $('div#' + listID).toggleClass("active");
             }
 
             function changeColor(newColor) {
