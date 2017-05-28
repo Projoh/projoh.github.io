@@ -125,11 +125,9 @@
 					</li>
 					<li class="listitem">
 						<div class="collapsible-header  waves-effect waves-block waves-blue" onclick="jumpToAndExpand('work',3)"> <i class="material-icons">wc</i>IT Administrator at Red Crescent Health Clinic</div>
-						<div class="collapsible-body"></div>
 					</li>
 					<li class="listitem">
 						<div class="collapsible-header  waves-effect waves-block waves-blue" onclick="jumpToAndExpand('work',4)"> <i class="material-icons">build</i>Webmaster and Administrator at Johsminecraft Inc</div>
-						<div class="collapsible-body"></div>
 					</li>
 				</ul>
 			</div>
@@ -633,6 +631,9 @@
               location.href = "#" + path;
 							setTimeout(function() {
 								$('.collapsible' + '#workcomputer').collapsible('open', listID);
+								$('html, body').animate({
+        					scrollTop: $('.collapsible' + '#workcomputer').offset().top -20 +(listID*50)
+    						}, 350);
 							}, 350);
 							// $('div#' + listID).toggleClass("active");
             }
