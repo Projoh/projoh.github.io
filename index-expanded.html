@@ -630,7 +630,9 @@
               var url = location.href;
               location.href = "#" + path;
 							setTimeout(function() {
-								$('.collapsible' + '#workcomputer').collapsible('open', listID);
+								if($(window).height() < 900) {
+									$('.collapsible' + '#workcomputer').collapsible('open', listID);
+								}
 								$('html, body').animate({
         					scrollTop: $('.collapsible' + '#workcomputer').offset().top -20 +(listID*50)
     						}, 350);
