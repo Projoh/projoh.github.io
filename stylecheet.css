@@ -135,6 +135,14 @@ position: absolute; -webkit-backface-visibility: hidden
 .navbar {
   padding: 0 !important;
   margin-bottom: 0 !important;
+    background-color: #c0c0c0;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:100;
+}
+.padded-section {
+    padding-top: 36px;
 }
 a.nopadding {
   padding-top: 5px !important;
