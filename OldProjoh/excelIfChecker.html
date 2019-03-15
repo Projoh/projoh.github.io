@@ -72,8 +72,22 @@ function checkTextHelper(text, startPos) {
                     return isLegitIf;
                 }
 
-                while(text[i-1] != ')') {
+                if(startPos == 0)
+                    return -1;
+                var openBracketCount = 1 ;
+                i+=3;
+                while(openBracketCount > 0) {
+                    if(text[i-1] == ')') {
+                        openBracketCount --;
+                    }
+                    if(text[i-1] == '(') {
+                        openBracketCount ++;
+                    }
                     i++;
+                    if(i > text.length) {
+                        alert('Brackets arent equal. Missing closing bracket for opening bracket position: ' + startPos);
+                        return text.length;
+                    }
                 }
             }
         }
