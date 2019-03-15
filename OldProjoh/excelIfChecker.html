@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Check Excel IF Functions over 3</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+
+</head>
+
+<body>
+<textarea id="function_input" width="100vh" height="100vh" style="font-size: 50px;" rows="10">if(x,y,z,d)</textarea><br>
+<button id="submit_button" onclick="checkText()" >Submit</button>
+<p id="output" style="word-break: break-word">
+    Output will be shown here
+</p>
+<script>
+function checkText() {
+    var input_element = document.getElementById('function_input');
+    var inputText = input_element.value;
+    var checker = checkTextHelper(inputText, 0);
+    var output_element = document.getElementById('output');
+
+    if(checker != -1) {
+        output_element.innerText = "ERROR: at position "+(checker + 1)+ " , remaining text is '" + inputText.substring(checker) + "' .";
+        input_element.value = inputText.substring(0, checker-1) + "\nERROR:\n" + inputText.substring(checker);
+    } else {
+        output_element.innerText ="No errors. Congratulations";
+    }
+
+
+    // if(x,y,z)
+    // if(x,y,z,d)
+    // if(x,y,if(x,y,z,d))
+    // if(x, y, if(d,z,y))
+    // error at position (10): ', d)'
+
+    // loop thru characters, starting at input start position
+    // if found ')' return -1 ( -1 means good here)
+    // if found comma, increment countOfCommas
+    // if countOfCommas > 2 then return current position
+    // if found the letter i, and the next letter is if , call function again starting at position + 2( aka after the '(' character)
+
+}
+
+function checkTextHelper(text, startPos) {
+    var countOfCommas = 0;
+    for(var i = startPos; i < text.length; i++) {
+        var currentChar = text[i];
+
+        if(currentChar == ')') {
+            return -1;
+        }
+
+        if(currentChar == ',') {
+            countOfCommas ++;
+        }
+
+        if(countOfCommas > 2) {
+            return i;
+        }
+
+        if(currentChar.toLowerCase() =='i') {
+            var nextLetters = text.substring(i,i+3);
+            if(nextLetters.toLowerCase() == 'if(') {
+                var isLegitIf = checkTextHelper(text, i + 3);
+
+                if(isLegitIf != -1) {
+                    return isLegitIf;
+                }
+
+                while(text[i-1] != ')') {
+                    i++;
+                }
+            }
+        }
+    }
+    return -1;
+}
+</script>
+</body>
+</html>
