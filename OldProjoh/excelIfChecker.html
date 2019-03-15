@@ -26,7 +26,7 @@ function checkText() {
 
     if(checker != -1) {
         output_element.innerText = "ERROR: at position "+(checker + 1)+ " , remaining text is '" + inputText.substring(checker) + "' .";
-        input_element.value = inputText.substring(0, checker-1) + "\nERROR:\n" + inputText.substring(checker);
+        input_element.value = inputText.substring(0, checker) + "\nERROR:\n" + inputText.substring(checker);
     } else {
         output_element.innerText ="No errors. Congratulations";
     }
